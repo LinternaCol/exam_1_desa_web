@@ -5,10 +5,10 @@ import asbtrac.ReinoVegetal;
 public class Cilantro extends ReinoVegetal {
     private String name;
     private String color;
-    private String tiempoVida;
+    private Double tiempoVida;
     private Double promedioVida;
     //Consturctor
-    public Cilantro(String name, String color, String tiempoVida, Double promedioVida) {
+    public Cilantro(String name, String color, Double tiempoVida, Double promedioVida) {
         this.name = name;
         this.color = color;
         this.tiempoVida = tiempoVida;
@@ -16,6 +16,14 @@ public class Cilantro extends ReinoVegetal {
     }
 
     public Cilantro() {
+    }
+    @Override
+    public String toString() {
+        return "\"Cilantro\":{"
+                +"\"name\":\"" + name
+                +"\" ,\"color\":\"" + color
+                +"\" ,\"tiempoVida\":\"" + tiempoVida
+                +"\" ,\"promedioVida\":\"" + promedioVida +"}";
     }
 
     //Getters and Setters
@@ -43,11 +51,11 @@ public class Cilantro extends ReinoVegetal {
         this.promedioVida = promedioVida;
     }
 
-    public String getTiempoVida() {
+    public Double getTiempoVida() {
         return tiempoVida;
     }
 
-    public void setTiempoVida(String tiempoVida) {
+    public void setTiempoVida(Double tiempoVida) {
         this.tiempoVida = tiempoVida;
     }
 }

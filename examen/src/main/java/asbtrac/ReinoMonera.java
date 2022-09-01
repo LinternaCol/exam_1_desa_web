@@ -8,6 +8,11 @@ public abstract  class ReinoMonera implements SerVivo {
     //Constructor
     public ReinoMonera() {
     }
+    @Override
+    public String toString() {
+        return "\"ReinoMonera\":{"
+                +"\"reino\":\"" + reino;
+    }
 
     //Getters an setters
     public String getReino() {

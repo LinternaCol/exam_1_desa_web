@@ -5,10 +5,10 @@ import asbtrac.ReinoVegetal;
 public class Brocoli extends ReinoVegetal {
     private String name;
     private String color;
-    private String tiempoVida;
+    private Double tiempoVida;
     private Double promedioVida;
     //Consturctor
-    public Brocoli(String name, String color, String tiempoVida, Double promedioVida) {
+    public Brocoli(String name, String color, Double tiempoVida, Double promedioVida) {
         this.name = name;
         this.color = color;
         this.tiempoVida = tiempoVida;
@@ -16,6 +16,15 @@ public class Brocoli extends ReinoVegetal {
     }
 
     public Brocoli() {
+    }
+
+    @Override
+    public String toString() {
+        return "\"Brocoli\":{"
+                +"\"name\":\"" + name
+                +"\" ,\"color\":\"" + color
+                +"\" ,\"tiempoVida\":\"" + tiempoVida
+                +"\" ,\"promedioVida\":\"" + promedioVida +"}";
     }
 
     //Getters and Setters
@@ -43,11 +52,11 @@ public class Brocoli extends ReinoVegetal {
         this.promedioVida = promedioVida;
     }
 
-    public String getTiempoVida() {
+    public Double getTiempoVida() {
         return tiempoVida;
     }
 
-    public void setTiempoVida(String tiempoVida) {
+    public void setTiempoVida(Double tiempoVida) {
         this.tiempoVida = tiempoVida;
     }
 }

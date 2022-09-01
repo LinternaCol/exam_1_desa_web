@@ -4,10 +4,10 @@ import asbtrac.ReinoAnimal;
 public class Perro extends ReinoAnimal{
     private String name;
     private String color;
-    private String tiempoVida;
+    private Double tiempoVida;
     private Double promedioVida;
-    //Consturctor
-    public Perro(String name, String color, String tiempoVida, Double promedioVida) {
+    //Constructor
+    public Perro(String name, String color, Double tiempoVida, Double promedioVida) {
         this.name = name;
         this.color = color;
         this.tiempoVida = tiempoVida;
@@ -15,6 +15,14 @@ public class Perro extends ReinoAnimal{
     }
 
     public Perro() {
+    }
+    @Override
+    public String toString() {
+        return "\"Perro\":{"
+                +"\"name\":\"" + name
+                +"\" ,\"color\":\"" + color
+                +"\" ,\"tiempoVida\":\"" + tiempoVida
+                +"\" ,\"promedioVida\":\"" + promedioVida +"}";
     }
 
     //Getters and Setters
@@ -42,11 +50,11 @@ public class Perro extends ReinoAnimal{
         this.promedioVida = promedioVida;
     }
 
-    public String getTiempoVida() {
+    public Double getTiempoVida() {
         return tiempoVida;
     }
 
-    public void setTiempoVida(String tiempoVida) {
+    public void setTiempoVida(Double tiempoVida) {
         this.tiempoVida = tiempoVida;
     }
 }
