@@ -18,7 +18,7 @@ public class Perro extends ReinoAnimal{
     }
     @Override
     public String toString() {
-        return "\"Perro\":{"
+        return super.toString() + "\"Perro\":{"
                 +"\"name\":\"" + name
                 +"\" ,\"color\":\"" + color
                 +"\" ,\"tiempoVida\":\"" + tiempoVida
@@ -56,5 +56,10 @@ public class Perro extends ReinoAnimal{
 
     public void setTiempoVida(Double tiempoVida) {
         this.tiempoVida = tiempoVida;
+    }
+
+    @Override
+    public int finbyPromLife() {
+        return 0;
     }
 }
