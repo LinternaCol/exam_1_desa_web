@@ -10,8 +10,7 @@ public abstract class ReinoProtista implements SerVivo {
     }
     @Override
     public String toString() {
-        return "\"ReinoProtista\":{"
-                +"\"reino\":\"" + reino;
+        return "\"ReinoProtista\":{";
     }
 
     //Getters an setters

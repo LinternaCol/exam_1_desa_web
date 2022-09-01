@@ -1,0 +1,20 @@
+{
+    "SerVivo":{
+        "ReinoVegetal":{
+            "cilantro":{
+                "name":"Coriandrum sativum","color":"Verde","tiempoVida":"0.2","promedioVida":"1.0"
+            },
+            "cilantro2":{
+                "name":"Coriandrum sativum","color":"Verde","tiempoVida":"0.5","promedioVida":"1.0"
+            },
+            "Brocoli":{
+                "name":"Brassica oleracea var. italica","color":"Verde","tiempoVida":"0.7","promedioVida":"0.5"
+            }
+        },
+        "ReinoAnimal":{
+            "Perro":{
+                "name":"Canis lupus familiaris","color":"negro","tiempoVida":"8.0","promedioVida":"12.0"
+            }
+        }
+    }
+}
